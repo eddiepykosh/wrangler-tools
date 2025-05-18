@@ -5,7 +5,7 @@ import pytz
 import os
 
 class TransactionReporter:
-    def __init__(self, db_path, timezone='UTC'):
+    def __init__(self, db_path, timezone='EST'):
         self.db_path = db_path
         self.timezone = timezone
 

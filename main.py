@@ -8,7 +8,7 @@ load_dotenv()
 
 def main():
     db_path = os.getenv('DB_PATH')
-    timezone = os.getenv('TIMEZONE', 'UTC')
+    timezone = os.getenv('TIMEZONE', 'EST')
     smtp_server = os.getenv('SMTP_SERVER')
     smtp_port = int(os.getenv('SMTP_PORT'))
     smtp_username = os.getenv('SMTP_USERNAME')
