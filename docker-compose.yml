@@ -1,0 +1,11 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  command:
+    build: .
+    command: python main.py
+    env_file: .env
+    restart: on-failure
+    volumes:
+      - ./data:/app/data
